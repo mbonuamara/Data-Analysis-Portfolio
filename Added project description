@@ -1,0 +1,31 @@
+# Employee Health Data Cleaning Project
+
+## Project Overview
+This project cleans a messy dataset of 10,000+ employee health records. The raw data had missing values, inconsistent department names, and no clear categories for stress or workload.
+
+## What I Did
+
+### 1. Handled Missing Values
+- **Missing Ages:** Filled blank ages with the company average age
+- **Missing Sleep Hours:** Filled with the company average sleep hours
+- **Missing Productivity Scores:** Filled with the company average productivity score
+
+### 2. Standardized Text Data
+- Fixed department name inconsistencies (e.g., "Manager" → "Marketing", "Final" → "Finance")
+- Converted all department names to proper case using `PROPER()`
+
+### 3. Created Risk Categories
+- **Work-Life Balance:** Labeled employees as "Overloaded" if they work more than 9 hours
+- **Stress Level:** Labeled employees as "High Risk" if stress score is above 7
+
+## Tools Used
+- Google Sheets (Excel formulas)
+- `IF` statements for conditional logic
+- `AVERAGE` for filling missing values
+- `PROPER` for text standardization
+
+## How to Use This Project
+1. Download the Excel file
+2. Review the formulas in columns P through U
+3. See how missing values were handled
+4. Observe the risk categories created
